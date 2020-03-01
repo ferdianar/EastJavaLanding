@@ -1,0 +1,408 @@
+body {
+    font-family: 'Roboto',sans-serif; /* font */
+    font-size: 14px;
+    margin: 0;
+}
+
+header {
+    height: 42em; /* tinggi header */
+    color: #FFF;
+}
+
+header::before {
+    content: "";  /* syarat 'before' */
+    height: 42em;
+    width: 100%;
+    background-image: url("/img/back-banner.jpg"); /* img background */
+    background-position: top center;  /* mengatur posisi gambar */
+    background-size: cover; /* gambar menyesuaikan lebar layar */
+    filter: brightness(50%); /* keredupan / overlay */
+    position: absolute;  
+    top: 0;
+    left: 0;
+    z-index: -1;  /* posisi turun 1 dimensi */
+    -webkit-filter: brightness(50%);   /* browser chrome yang tidak support CSS 3 */
+}
+
+.menu-top {
+    font-size: 18px;
+    font-weight: normal;
+    padding-top: 20px;
+    margin: 0 10px 0;
+}
+
+.menu-top .left {
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-family: 'Oswald';
+}
+
+.menu-top .left .highlight {  /* east */
+    color: #B5992B;
+    font-weight: bold;
+}
+
+.menu-top .right {   /* java */
+    text-align: right;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Oswald';
+}
+
+.banner {   /* posisi headline */
+    margin-top: 10em;
+    text-align: center;
+}
+
+.banner h1, .banner h4 {   /* headline */
+    font-family: 'Caveat', cursive;
+    text-align: center;
+    font-weight: normal;
+    font-size: 4.5em;
+    margin: 0;
+    color: #EEE;
+}
+
+.banner h4 {
+    font-size: 2em;
+    color: #CCC;
+}
+
+.banner .button {
+    display: inline-block;
+    height: 35px;
+    line-height: 35px;
+    border: none;
+    background: #EEEEEEBB;
+    padding: 0 20px;
+    margin: 80px auto 30px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all .2s linear;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    -o-transition: all .2s linear;
+}
+
+.banner .button:hover {
+    background: #CCC;
+}
+
+.banner .list-user {
+    margin: 0;
+    padding: 0;
+}
+
+.banner .list-user li {
+    list-style: none;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 0 3px;
+    border: solid 2px #CCCCCC50;
+    transition: all .2s linear;
+}
+
+.banner .list-user li:hover {
+    border-color: #CCCCCC80;
+}
+
+.banner .list-user li:first-child,  /* mengambil element list yang pertama */
+.banner .list-user li:last-child {  /* mengambil element list yang terakhir */
+    text-align: center;
+    line-height: 41px;
+    font-size: 18px;
+    margin: 0 3px;
+    color: #FFF;
+    background: #FFFFFF20;
+    border: solid 1px transparent;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+
+.banner .list-user li:hover:first-child,
+.banner .list-user li:hover:last-child {
+    background: #FFFFFF50;
+}
+
+.banner .list-user img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.first {
+    margin-top: -50px;
+    text-align: center;
+}
+
+.first>.container-fluid {
+    width: auto;
+    margin: 0 50px;
+    padding: 0;
+    background: #FFF;
+    z-index: 10;
+}
+
+.first .menu {
+    margin: 0;
+    padding: 0;
+}
+
+.first .menu li {
+    list-style: none;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 0 50px;
+    height: 80px;
+    line-height: 80px;
+    letter-spacing: 1px;
+}
+
+.first .menu li:first-child {
+    margin-left: 0;
+}
+
+.first .menu li:last-child {
+    margin-right: 0;
+}
+
+.first img {
+    width: 80%;
+}
+
+.first .description {
+    margin-top: 2rem;
+}
+
+.first .description h3,
+.first .infos h3 {
+    font-size: 22px;
+    font-weight: 500;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+.first .description p {
+    text-align: justify;
+    line-height: 1.8;
+}
+
+.first .description .more,
+.first .description .more:link,
+.first .description .more:visited {
+    float: left;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.social {
+    position: relative;
+    top: 10px;
+    clear: both;
+    text-align: left;
+}
+
+.social a {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+a,
+a:link,
+a:visited {
+    color: #111;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #555;
+}
+
+.first .infos {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.first .infos h3 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.first .infos small {
+    font-size: 12px;
+    width: 35%;
+    display: inline-block;
+    line-height: 1.8;
+    color: #777;
+}
+
+.first .gallery>div {
+    padding: 0.5px;
+    margin: 0;
+}
+
+/* gallery image */
+.first .gallery img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    filter: brightness(60%);
+    transition: 0.2s linear;
+}
+
+/* terang ketika di hover */
+.first .gallery img:hover {
+    filter: brightness(100%);
+}
+
+
+/* media blog */
+.media-blog {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.media-blog img {
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.media-blog h4 {
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* content media blog */
+.media-blog p {
+    text-align: justify;
+    line-height: 1.5;
+    font-style: italic;
+    margin: 0 0 10px;
+    color: #555;
+}
+
+/* testimoni */
+.testimoni {
+    margin-top: 5%;
+}
+
+.testimoni .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    display: inline-block;
+    background: #777;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.testimoni .carousel-inner img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: solid 4px #CCCCCC80;
+    padding: 1px;
+}
+
+.testimoni .carousel-inner p {
+    margin: 20px auto 10px;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: italic;
+    text-align: center;
+    width: 50%;
+}
+
+.testimoni .carousel-inner h5 {
+    margin-bottom: 60px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+/* Footer */
+.footer {
+    position: relative;
+    margin-top: 5em;
+    background-image: linear-gradient(#FFFFFF50, #B1D6F080), url('/img/footer-mount.jpg');
+    background-size: cover;
+    background-position: top center;
+}
+
+.footer .row {
+    height: 400px;
+}
+
+.footer h1 {
+    margin-top: 120px;
+    font-size: 2.3em;
+    color: #444;
+    letter-spacing: 2px;
+}
+
+.footer h2 {
+    margin-top: 50px;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    color: #444;
+    letter-spacing: 2px;
+}
+
+.footer p {
+    color: #222;
+    font-weight: normal;
+}
+
+.img-download {
+    height: 45px;
+    margin-right: 5px;
+    border-radius: 30px;
+    background: #000;
+    padding: 0 10px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.img-download:hover {
+    opacity: 1;
+}
+
+.hands-on {
+    background-image: url('/img/hands-on.png');
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    height: 400px;
+}
+
+.social {
+    padding: 0;
+    margin: 0;
+}
+
+.social li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.social li a {
+    color: #222;
+    font-size: 1em;
+}
